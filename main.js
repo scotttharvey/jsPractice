@@ -36,3 +36,30 @@ function rakeGarden(garden) {
 var garden1 = 'slug spider rock gravel gravel gravel gravel gravel gravel gravel';
 rakeGarden(garden1)
 ///
+
+//CONVERTS ROMAN NUMERAL
+
+function romanConv(str){
+	var strArr = str.split("");
+
+	for(var i =0; i < strArr.length; i++){
+		if(strArr[i] === "X"){
+			strArr[i] = 10;
+		}
+		else if(strArr[i] === "I"){
+			strArr[i] = 1;
+		}
+		else if(strArr[i] === "V"){
+			strArr[i] = 5;
+		}
+	}
+
+	return strArr.reduce(function (a, b) {
+    return a + b;
+});
+}
+
+var romanNum = "XXVI";
+
+romanConv(romanNum);
+//
