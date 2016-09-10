@@ -90,3 +90,10 @@ var isSquare = function(n){
 
 isSquare(79);
 ///////////
+
+
+
+function addTwo(a, b){
+  return a + b;
+}
+///
