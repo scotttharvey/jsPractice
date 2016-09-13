@@ -97,3 +97,9 @@ function addTwo(a, b){
   return a + b;
 }
 ///
+// REMOVES ALL SPACES AND SPECIAL CHARACTERS WITH REGEX//
+////////////////////
+function borrow(s){
+	return s.toLowerCase().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, "");
+}
+////////////
