@@ -103,3 +103,12 @@ function borrow(s){
 	return s.toLowerCase().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, "");
 }
 ////////////
+//SORT WORDS IN ARRAY SMALLEST TO LARGEST//
+function sortByLength (array) {
+  return array.sort(function(a, b){
+  	var word1 = a.split("").length;
+	var word2 = b.split("").length;
+  	return word1-word2
+  });
+}
+/////
