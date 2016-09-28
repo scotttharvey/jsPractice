@@ -111,4 +111,20 @@ function sortByLength (array) {
   	return word1-word2
   });
 }
-/////
+/////Compare strings, letter can only occure once//
+function longest(s1, s2) {
+ 	var all = (s1 + s2).split("");
+ 	var newArr =[];
+ 	var arr = all.sort();
+ 	for(var i =0; i < arr.length; i++){
+ 		if(arr[i + 1] === arr[i] || arr[i] == arr[i]){
+ 			newArr.push(arr[i]);
+ 		}
+ 	}
+ 	var winner = newArr;
+ 	return winner.filter(function(el, index, self){
+ 		return index == self.indexOf(el)
+ 	}).join("");
+}
+longest("aretheyhere", "yestheyarehere")
+//////
