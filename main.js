@@ -128,3 +128,13 @@ function longest(s1, s2) {
 }
 longest("aretheyhere", "yestheyarehere")
 //////
+//// Mask All but last 4 CHARACTERS of string ///
+// return masked string
+function maskify(cc) {
+var arr = cc.split("");
+for(var i = 0; i <= arr.length-5; i++){
+	arr[i] = "#";
+}
+return arr.join("")
+}
+////////
