@@ -138,3 +138,8 @@ for(var i = 0; i <= arr.length-5; i++){
 return arr.join("")
 }
 ////////
+//Check if string is a Pangram with Regex//
+function isPangram(string){
+   return /(?=.*a)(?=.*b)(?=.*c)(?=.*d)(?=.*e)(?=.*f)(?=.*g)(?=.*h)(?=.*i)(?=.*j)(?=.*k)(?=.*l)(?=.*m)(?=.*n)(?=.*o)(?=.*p)(?=.*q)(?=.*r)(?=.*s)(?=.*t)(?=.*u)(?=.*v)(?=.*w)(?=.*x)(?=.*y)(?=.*z)./i.test(string)
+}
+///
