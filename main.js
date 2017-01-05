@@ -156,3 +156,19 @@ for (var i = 0; i <= n; i++)
   return sum;
 }
 /////
+//Checks if all nums are square
+var isSquare = function(arr){
+  if(arr.length < 1){
+    return undefined
+  }
+  return arr.every(a => {
+    var sq = Math.sqrt(a);
+    if(sq % 1 === 0){
+      return true
+    }
+    else{
+      return undefined
+    }
+  })
+}
+//////
