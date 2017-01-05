@@ -172,3 +172,10 @@ var isSquare = function(arr){
   })
 }
 //////
+//Calculate total mean
+function calculate_total(subtotal, tax, tip) {
+ var addMe = (subtotal * (tax/100)) + (subtotal * (tip/100))
+ var num = subtotal + addMe
+ return Math.round(num * 100) / 100
+}
+///
